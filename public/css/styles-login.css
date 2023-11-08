@@ -1,0 +1,296 @@
+/*HEADER*/
+header {
+    background-color: #EAC926;
+    padding-bottom: 15px;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+body {
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+h3.titulares {
+    font-size: 24px;
+    padding: 0.5rem;
+    color: #666;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.compra-cuotas {
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+
+p.cuotas {
+    text-align: center;
+}
+
+.logo,
+.form {
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Ajusta el valor para controlar la curvatura del borde */
+    overflow: hidden;
+    /* Para que el ícono de lupa esté dentro del input */
+    background-color: #fff;
+    /* Establece el fondo del contenedor con el mismo color que el fondo del input */
+}
+
+#search {
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* Ajusta el valor según tus preferencias */
+    width: 100%;
+    background-color: #fff;
+    /* Establece el fondo del input con el mismo color que el fondo del contenedor */
+}
+
+#search-button {
+    background: #fff;
+    /* Establece el fondo del botón con el mismo color que el fondo del input y el contenedor */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#search-button i {
+    font-size: 16px;
+    /* Ajusta el tamaño del ícono según tus preferencias */
+    padding: 5px;
+    /* Ajusta el espaciado del ícono dentro del botón */
+}
+
+.burger-menu {
+    display: flex;
+    background-color: #1259c3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+
+/*MAIN*/
+main{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+}
+h3{
+    color: #666;
+}
+input.inputs {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding:10px;
+    width:50%;
+}
+input.enviar{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width:50%;
+    background-color: #1259c3;
+    padding:10px;
+    color:white;
+    text-align: center;
+}
+input.enviar:hover {
+    background-color: #0022AA;
+}
+
+/*FOOTER*/
+footer {
+    background-color: white;
+}
+
+.footer-detalles .icono-tarjeta i,
+.footer-detalles .icono-regalo i,
+.footer-detalles .icono-seguridad i {
+    color: #1259c3
+}
+
+.footer-detalles .icono-tarjeta i:hover,
+.footer-detalles .icono-regalo i:hover,
+.footer-detalles .icono-seguridad i:hover {
+    color: #00B3E7;
+}
+
+.footer-detalles{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 12%;
+    margin-right: 12%;;
+}
+
+div.pagos,div.envios,div.seguridad {
+    padding: 2rem;
+}
+
+p.icono-tarjeta i{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3.forma-pago-titulo {
+    text-align: center;
+    padding-top: 0.3rem;
+    color: #666;
+    margin: 0;
+}
+
+p.forma-pago-texto {
+    text-align: center;
+    margin: 0;
+}
+
+p.icono-regalo i {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3.envio-gratis-titulo {
+    text-align: center;
+    padding-top: 0.3rem;
+    color: #666;
+    margin: 0;
+}
+
+p.envio-gratis-texto {
+    text-align: center;
+    margin: 0;
+}
+
+p.icono-seguridad i {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3.seguridad-titulo {
+    text-align: center;
+    padding-top: 0.3rem;
+    color: #666;
+    margin: 0;
+}
+
+p.seguridad-texto {
+    text-align: center;
+    margin: 0;
+}
+
+p.copyright {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+@media screen and (max-width: 575px) {
+    p.descripciones {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .burger-menu {
+        display: none
+    }
+
+    .compra-cuotas, .logo, .form {
+        display: inline-block;
+        width: 30%;
+    }
+    ul.listas{
+        list-style: none;
+        padding:0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+    }
+    ul.listas li {
+        margin-right: 15px;
+        font-size: small;
+    }
+}
+
+/* Media query para desktop  */
+@media screen and (min-width: 992px) {
+    .top-header {
+        margin-bottom: 10px;
+    }
+
+    ul.listas {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    ul.listas li {
+        margin-right: 15px;
+        font-size: large
+    }
+    .footer-detalles{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px
+    }    
+}
+/*// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
