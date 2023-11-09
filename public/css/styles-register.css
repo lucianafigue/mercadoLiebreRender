@@ -119,13 +119,18 @@ input.inputs {
     width:200%;
     padding:10px;
 } */
-main{
+.main-register{
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
     background-color: #ebebeb;
+}
+span.errores{
+    font-size: 16px;
+    color:red;
+    font-weight: bold;
 }
 
 h3,.fecha-nac{
@@ -135,6 +140,7 @@ h3,.fecha-nac{
 input.enviar:hover, input.borrar:hover{
     background-color: #0022AA;
 }
+
 input.inputs {
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -142,7 +148,9 @@ input.inputs {
     background-color: #ffffff;
     padding:15px;
     width:80%;
+    font-size: large;
 }
+
 input.enviar,input.borrar{
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -153,9 +161,6 @@ input.enviar,input.borrar{
     padding:10px;
     color:white;
     text-align: center;
-}
-p.copyright{
-    margin-bottom: 0;
 }
 
 /*FOOTER*/
@@ -245,6 +250,7 @@ p.seguridad-texto {
 p.copyright {
     padding-bottom: 1.5rem;
     padding-left: 1rem;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 575px) {

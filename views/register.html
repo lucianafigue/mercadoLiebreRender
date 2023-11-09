@@ -54,74 +54,89 @@
             <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
     </header>
-    <main class="main-register">
-        <form action="/register" method="POST">
-            <h3>Registro de Usuario</h3>
-            <input class="inputs" type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre y Apellido"pattern="^[A-Za-z\s]{2,50}$" title="Solo se permiten letras y espacios. Mínimo 2 caracteres y máximo 50 caracteres." required>
-            <br>
-            <br>
-            <input class="inputs" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" pattern="^[a-zA-Z0-9_]{4,16}$" title="De 4 a 16 caracteres alfanuméricos o guiones bajos" required>
-            <br>
-            <br>
-            <input class="inputs" type="email" name="email" placeholder="E-mail">
-            <br>
-            <br>
-            <label for="fecha-nac"><b class="fecha-nac">Fecha de nacimiento</b></label>
-            <br>
-            <br>
-            <input class="inputs" type="date" name="fecha-nac" id="fecha-nac">
-            <br>
-            <br>
-            <input class="inputs" type="text" name="domicilio" placeholder="Domicilio" required pattern="[a-zA-Z0-9\s\.,#-]+">
+    <main>
+        <div class="main-register">
+            <form action="/register" method="POST">
+                <h3>Registro de Usuario</h3>
+                <input class="inputs" type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre y Apellido"pattern="^[A-Za-z\s]{2,50}$" title="Solo se permiten letras y espacios. Mínimo 2 caracteres y máximo 50 caracteres." required/>
+                <br>
+                <span class="errores">Solo se permiten letras y espacios. Mínimo 2 caracteres y máximo 50 caracteres.</span>
+                <br>
+                <br>
+                <input class="inputs" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" pattern="^[a-zA-Z0-9_]{4,16}$" title="De 4 a 16 caracteres alfanuméricos o guiones bajos" required>
+                <br>
+                <span class="errores">Debe contener de 4 a 16 caracteres alfanuméricos o guiones bajos.</span>
+                <br>
+                <br>
+                <input class="inputs" type="email" name="email" placeholder="E-mail" title="Debe contener un '@' y un dominio válido" required>
+                <br>
+                <span class="errores">Debe contener un '@' y un dominio válido.</span>
+                <br>
+                <br>
+                <label for="fecha-nac"><b class="fecha-nac">Fecha de nacimiento</b></label>
+                <br>
+                <br>
+                <input class="inputs" type="date" name="fecha-nac" id="fecha-nac">
+                <br>
+                <br>
+                <input class="inputs" type="text" name="domicilio" placeholder="Domicilio" pattern="[a-zA-Z0-9\s\.,#-]+" title="Debe tener al menos 5 caracteres" required>
+                <br>
+                <span class="errores">Debe tener al menos 5 caracteres.</span>
+                <br>
+                <br>
+        
+                <h3>Perfil del usuario</h3>
+                <div class="perfil">
+                    <input type="radio" name="perfil" value="comprar" id="comprar">
+                    <label for="comprar">Comprador</label>
+                    <input type="radio" name="perfil" value="vender" id="vender">
+                    <label for="vender">Vendedor</label>
+                </div>
     
-            <h3>Perfil del usuario</h3>
-            <div class="perfil">
-                <input type="radio" name="perfil" value="comprar" id="comprar">
-                <label for="comprar">Comprador</label>
-                <input type="radio" name="perfil" value="vender" id="vender">
-                <label for="vender">Vendedor</label>
-            </div>
-
-            <h3>Intereses</h3>
-            <div class="intereses">
-                <div>
-                    <input type="checkbox" name="intereses" value="a" id="a">
-                    <label for="a">Electro</label>
+                <h3>Intereses</h3>
+                <div class="intereses">
+                    <div>
+                        <input type="checkbox" name="intereses" value="a" id="a">
+                        <label for="a">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="b" id="b">
+                        <label for="b">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="c" id="c">
+                        <label for="c">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="d" id="d">
+                        <label for="d">Juguetería</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="e" id="e">
+                        <label for="e">Vida sana</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="b" id="b">
-                    <label for="b">Moda</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="c" id="c">
-                    <label for="c">Hogar</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="d" id="d">
-                    <label for="d">Juguetería</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" value="e" id="e">
-                    <label for="e">Vida sana</label>
-                </div>
-            </div>
-            
-            <h3>Elegí tu foto de usuario</h3>
-            <input type="file" name="avatar">
-            <br>
-            <br>
-            <input class="inputs" type="password" name="contraseña" placeholder="Ingresa tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
-            <br>
-            <br>
-            <input class="inputs" type="password" name="confirmar-contra" placeholder="Confirmá tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
-
-            <br>
-            <br>
-            <input class="enviar" type="submit" value="Enviar" onclick="window.location.href = '/'">
-            <input class="borrar" type="reset" value="Borrar">
-            <br>
-            <br>
-        </form>
+                
+                <h3>Elegí tu foto de usuario</h3>
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input class="inputs" type="password" name="contraseña" placeholder="Ingresa tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
+                <br>
+                <span class="errores">Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.</span>
+                <br>
+                <br>
+                <input class="inputs" type="password" name="confirmar-contra" placeholder="Confirmá tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
+                <br>
+                <span class="errores">Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.</span>
+                <br>
+                <br>
+                <input class="enviar" type="submit" value="Enviar" onclick="window.location.href = '/'">
+                <input class="borrar" type="reset" value="Borrar">
+                <br>
+                <br>
+            </form>
+        </div>
     </main>
 
     <footer>
