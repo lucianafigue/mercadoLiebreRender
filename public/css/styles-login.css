@@ -109,6 +109,7 @@ main{
 }
 h3{
     color: #666;
+    margin-top: 5%;
 }
 input.inputs {
     border: 1px solid #ffffff;
@@ -128,6 +129,7 @@ input.enviar{
     padding:10px;
     color:white;
     text-align: center;
+    margin-bottom: 5%;
 }
 input.enviar:hover {
     background-color: #0022AA;
@@ -135,6 +137,7 @@ input.enviar:hover {
 p.copyright {
     margin-bottom: 0;
 }
+
 /*FOOTER*/
 footer {
     background-color: white;
