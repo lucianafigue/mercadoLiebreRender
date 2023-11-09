@@ -135,6 +135,8 @@ input.enviar:hover {
 /*FOOTER*/
 footer {
     background-color: white;
+    position: absolute;
+    margin-bottom: 0;
 }
 
 .footer-detalles .icono-tarjeta i,

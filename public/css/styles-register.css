@@ -153,6 +153,9 @@ input.enviar,input.borrar{
     color:white;
     text-align: center;
 }
+p.copyright{
+    margin-bottom: 0;
+}
 /*FOOTER*/
 footer {
     background-color: white;

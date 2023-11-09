@@ -196,6 +196,10 @@ main section h3 {
     margin: 20px 0px;
 }
 
+p.copyright{
+    margin-bottom: 0;
+}
+
 /*FOOTER*/
 footer {
     background-color: white;
