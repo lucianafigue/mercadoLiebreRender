@@ -131,7 +131,9 @@ input.enviar{
 input.enviar:hover {
     background-color: #0022AA;
 }
-
+p.copyright {
+    margin-bottom: 0;
+}
 /*FOOTER*/
 footer {
     background-color: white;
