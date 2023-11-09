@@ -159,6 +159,7 @@ p.copyright{
 /*FOOTER*/
 footer {
     background-color: white;
+    width:100%
 }
 
 .footer-detalles .icono-tarjeta i,
@@ -318,6 +319,10 @@ p.copyright {
         color:white;
         text-align: center;
     } 
+    .footer{
+        position:fixed;
+        bottom:0;
+    }
 }
 /*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }

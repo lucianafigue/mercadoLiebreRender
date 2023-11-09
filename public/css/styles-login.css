@@ -137,8 +137,7 @@ p.copyright {
 /*FOOTER*/
 footer {
     background-color: white;
-    position: absolute;
-    margin-bottom: 0;
+    width:100%
 }
 
 .footer-detalles .icono-tarjeta i,
@@ -277,6 +276,10 @@ p.copyright {
         padding: 0px;
         margin: 0px
     }    
+    .footer{
+        position:fixed;
+        bottom:0;
+    }
 }
 /*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
