@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background-color: #ebebeb;
+    background-color: white;
     margin: 0;
 }
 
@@ -125,6 +125,7 @@ main{
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
+    background-color: #ebebeb;
 }
 
 h3,.fecha-nac{

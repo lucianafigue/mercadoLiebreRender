@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background-color: #ebebeb;
+    background-color: white;
     margin: 0;
 }
 
@@ -133,6 +133,7 @@ main {
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
+    background-color: #ebebeb;
 }
 
 main section div.products article i {
