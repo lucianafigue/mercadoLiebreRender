@@ -51,26 +51,20 @@ p.cuotas {
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* Ajusta el valor para controlar la curvatura del borde */
     overflow: hidden;
-    /* Para que el ícono de lupa esté dentro del input */
     background-color: #fff;
-    /* Establece el fondo del contenedor con el mismo color que el fondo del input */
 }
 
 #search {
     border: none;
     outline: none;
     padding: 10px;
-    /* Ajusta el valor según tus preferencias */
     width: 100%;
     background-color: #fff;
-    /* Establece el fondo del input con el mismo color que el fondo del contenedor */
 }
 
 #search-button {
     background: #fff;
-    /* Establece el fondo del botón con el mismo color que el fondo del input y el contenedor */
     border: none;
     padding: 0;
     cursor: pointer;
@@ -78,9 +72,7 @@ p.cuotas {
 
 #search-button i {
     font-size: 16px;
-    /* Ajusta el tamaño del ícono según tus preferencias */
     padding: 5px;
-    /* Ajusta el espaciado del ícono dentro del botón */
 }
 
 .burger-menu {
@@ -97,28 +89,7 @@ p.cuotas {
 }
 
 /*MAIN*/
-/* main{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-} */
-/* main {
-    width: 100%;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
 
-input.inputs {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #ffffff;
-    width:200%;
-    padding:10px;
-} */
 .main-register{
     width: 100%;
     display: flex;
@@ -130,7 +101,6 @@ input.inputs {
 span.errores{
     font-size: 16px;
     color:red;
-    font-weight: bold;
 }
 
 h3,.fecha-nac{
@@ -332,20 +302,6 @@ p.copyright {
         bottom:0;
     }
 }
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }*/
 
 *{
     box-sizing: border-box;
