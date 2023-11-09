@@ -272,6 +272,7 @@ p.copyright {
         font-size: small;
     }
 }
+
 /* Media query para desktop  */
 @media screen and (min-width: 992px) {
     .top-header {
@@ -301,14 +302,14 @@ p.copyright {
         overflow: hidden;
         background-color: #ffffff;
         padding:15px;
-        width:60%;
+        width:50%;
     }
     input.enviar,input.borrar{
         border: 1px solid #ffffff;
         border-radius: 5px;
         overflow: hidden;
         background-color: #ffffff;
-        width:30%;
+        width:25%;
         background-color: #1259c3;
         padding:10px;
         color:white;
