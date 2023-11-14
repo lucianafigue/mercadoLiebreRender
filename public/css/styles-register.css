@@ -39,6 +39,10 @@ p.cuotas {
     text-align: center;
 }
 
+.logo{
+    max-width: 280px;
+}
+
 .logo,
 .form {
     display: inline-block;
@@ -253,6 +257,10 @@ p.copyright {
         margin-right: 15px;
         font-size: small;
     }
+    ul.listas a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 /* Media query para desktop  */
@@ -300,6 +308,10 @@ p.copyright {
     .footer{
         position:fixed;
         bottom:0;
+    }
+    ul.listas a {
+        text-decoration: none;
+        color: black;
     }
 }
 
